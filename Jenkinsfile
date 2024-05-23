@@ -17,7 +17,7 @@ pipeline {
         }
         stage('tests-on-dev') {
             steps {
-                run_tests("DEV")
+                run_tests("dev")
             }
         }
         stage('deploy-to-stg') {
@@ -27,7 +27,7 @@ pipeline {
         }
         stage('tests-on-stg') {
             steps {
-                run_tests("STG")
+                run_tests("stg")
             }
         }
         stage('deploy-to-prd') {
@@ -37,7 +37,7 @@ pipeline {
         }
         stage('tests-on-prd') {
             steps {
-                run_tests("PRD")
+                run_tests("prd")
             }
         }
     }
