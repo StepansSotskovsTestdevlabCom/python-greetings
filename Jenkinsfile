@@ -37,7 +37,7 @@ pipeline {
         }
         stage('tests-on-prd') {
             steps {
-                run_tests("prd")
+                run_tests("prod")
             }
         }
     }
