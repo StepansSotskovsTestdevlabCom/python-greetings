@@ -51,7 +51,7 @@ def build_docker_image() {
     sh "docker build --no-cache -t stepanssotskovs/python-greetings-app:latest ."
 
     echo "Pushing docker image to the docker registry"
-    sh "docker push stepanssotskovs/spython-greetings-app:latest"   
+    sh "docker push stepanssotskovs/python-greetings-app:latest"   
 }
 
 
